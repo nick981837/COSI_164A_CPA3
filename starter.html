@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="follow.js"></script>
+
+  </head>
+  <body>
+
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="golf_club_o" src="10508_Golf Club - Driver_Diffuse_v2_L3.obj"></a-asset-item>
+      <a-asset-item id="golf_club_m" src="10508_Golf Club - Driver_Diffuse_v2_L3.mtl"></a-asset-item>
+      <a-asset-item id="golf_ball_o" src="10507_Golf Ball_v1_L3.obj"></a-asset-item>
+      <a-asset-item id="golf_ball_m" src="10507_Golf Ball_v1_L3.mtl"></a-asset-item>
+    </a-assets>
+    <!-- avatar -->
+    <a-box  src="grass.jpeg" height="200" width="200" depth="1" rotation="-90 0 0" position="0 -0.5 0" repeat="40 40" ></a-box>
+    <a-sky material="src:background.jpeg"></a-sky>
+    <a-entity obj-model="obj: #golf_club_o; mtl: #golf_club_m" position="0 0 -5" scale="0.03 0.03 0.03" rotation="-90 0 0" ></a-entity>
+    <a-entity obj-model="obj: #golf_ball_o; mtl: #golf_ball_m" position="0 0.5 -8" scale="0.1 0.1 0.1" rotation="-90 0 0" ></a-entity>
+
+    
+  
+  </a-scene>
+  </body>
+  </html>
