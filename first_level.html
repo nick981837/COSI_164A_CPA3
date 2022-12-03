@@ -82,7 +82,7 @@
             position="0 0 0" width="3" height="1" depth="10"></a-box>
         <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box" obj-model="obj: #golf_club_o; mtl: #golf_club_m" position="0 0 -4" scale="0.1 0.1 0.1" rotation="-90 0 0" ></a-entity>
         <a-entity 
-            camera position="0 1.6 0"
+            camera position="0 1.6 0" near="0.01"
              ></a-entity>
         <a-entity id="hud"
              health="10"
@@ -103,6 +103,35 @@
     <a-sky material="src:background.jpeg"></a-sky>
     <a-entity obj-model="obj: #flag_o;" position="-10 1 -30" scale="1 1 1" rotation="0 0 0" color="yellow" follow="target:#avatar;dist:10;speed:5;url:second_level.html" text="width:20; value: Next Level!;"></a-entity>
   
+      
+    <!-- windmills -->
+    <a-entity gltf-model="windmill.gltf"
+              animation-mixer="clip:bladeRotation"
+              position="0 0 -30"
+              rotation="0 -90 0"
+              scale= "0.75 0.75 0.75">
+    </a-entity>  
+      
+    <a-entity gltf-model="windmill.gltf"
+              animation-mixer="clip:bladeRotation"
+              position="10 0 -30"
+              rotation="0 -90 0"
+              scale= "0.75 0.75 0.75">
+    </a-entity>  
+      
+    <a-entity gltf-model="windmill.gltf"
+              animation-mixer="clip:bladeRotation"
+              position="20 0 -30"
+              rotation="0 -90 0"
+              scale= "0.75 0.75 0.75">
+    </a-entity>  
+      
+    <a-entity gltf-model="windmill.gltf"
+              animation-mixer="clip:bladeRotation"
+              position="30 0 -30"
+              rotation="0 -90 0"
+              scale= "0.75 0.75 0.75">
+    </a-entity>  
   </a-scene>
   </body>
   </html>
