@@ -51,14 +51,14 @@
         material="src:snow.jpg; repeat:40 40"
     ></a-box>
     <!--Tom & Jerry-->
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="-1 0 -10"
               rotation="0 0 0"
               gltf-model="Jerry.gltf"
               animation-mixer="clip:jump"
     ></a-entity>
 
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="1 0 -10"
               rotation="0 0 0"
               gltf-model="Tom.gltf"
@@ -93,25 +93,50 @@
               animation-mixer="clip:TomJump"
     ></a-entity>
 
-    <!--Gundam-->
-    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
-              position="0 0 -5"
+    <!--tank-->
+
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="-10 0 -20"
               rotation="0 180 0"
-              gltf-model="gundam.gltf"
-              animation-mixer="clip:TomJump"
+              gltf-model="tank.gltf"
+              animation-mixer="clip:tank"
+              
+    ></a-entity>
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="0 0 -20"
+              rotation="0 180 0"
+              gltf-model="tank.gltf"
+              animation-mixer="clip:tank"
+              
+    ></a-entity>
+
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="10 0 -20"
+              rotation="0 180 0"
+              gltf-model="tank.gltf"
+              animation-mixer="clip:tank"
+              
+    ></a-entity>
+
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="20 0 -20"
+              rotation="0 180 0"
+              gltf-model="tank.gltf"
+              animation-mixer="clip:tank"
+              
     ></a-entity>
 
     
     <!--wall-->
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
-              position="-8 0 -5"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="-3 0 -5"
               rotation="0 90 0"
               gltf-model="rotationwall.gltf"
               animation-mixer="clip:rotation"
     ></a-entity>
 
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
-              position="16 0 -5"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="11 0 -5"
               rotation="0 0 0"
               gltf-model="rotationwall.gltf"
               animation-mixer="clip:rotation"
