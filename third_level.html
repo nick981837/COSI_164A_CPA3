@@ -50,6 +50,87 @@
         rotation="-90 0 0" position="0 -0.5 0" 
         material="src:grass.jpeg; repeat:40 40"
     ></a-box>
+    <!--Tom & Jerry-->
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="-1 0 -10"
+              rotation="0 0 0"
+              gltf-model="Jerry.gltf"
+              animation-mixer="clip:jump"
+    ></a-entity>
+
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="1 0 -10"
+              rotation="0 0 0"
+              gltf-model="Tom.gltf"
+              animation-mixer="clip:TomJump"
+    ></a-entity>
+
+    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+              position="-10 0 -50"
+              rotation="0 0 0"
+              gltf-model="Jerry.gltf"
+              animation-mixer="clip:jump"
+    ></a-entity>
+
+    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+              position="10 0 -50"
+              rotation="0 0 0"
+              gltf-model="Tom.gltf"
+              animation-mixer="clip:TomJump"
+    ></a-entity>
+
+    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+              position="-5 0 -75"
+              rotation="0 0 0"
+              gltf-model="Jerry.gltf"
+              animation-mixer="clip:jump"
+    ></a-entity>
+
+    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+              position="5 0 -75"
+              rotation="0 0 0"
+              gltf-model="Tom.gltf"
+              animation-mixer="clip:TomJump"
+    ></a-entity>
+
+    <!--Gundam-->
+    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+              position="0 0 -5"
+              rotation="0 180 0"
+              gltf-model="gundam.gltf"
+              animation-mixer="clip:TomJump"
+    ></a-entity>
+
+    
+    <!--wall-->
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="-8 0 -5"
+              rotation="0 90 0"
+              gltf-model="rotationwall.gltf"
+              animation-mixer="clip:rotation"
+    ></a-entity>
+
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="16 0 -5"
+              rotation="0 0 0"
+              gltf-model="rotationwall.gltf"
+              animation-mixer="clip:rotation"
+    ></a-entity>
+
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="-8 0 -50"
+              rotation="0 90 0"
+              gltf-model="rotationwall.gltf"
+              animation-mixer="clip:rotation"
+    ></a-entity>
+
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="16 0 -50"
+              rotation="0 0 0"
+              gltf-model="rotationwall.gltf"
+              animation-mixer="clip:rotation"
+    ></a-entity>
+
 
    
     <!-- walls are defined with mixins but ammo-body,ammo-shape
