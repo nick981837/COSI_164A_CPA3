@@ -16,7 +16,7 @@
             <a-box width="1"
                     ammo-body="type:kinematic" ammo-shape="type:box"
                     material="color:red"  
-                    position="{{10*x}} 0 -30">
+                    position="{{10*x}} 0 -80">
             </a-box>
         {% endfor %}
       </script>
@@ -65,28 +65,28 @@
               animation-mixer="clip:TomJump"
     ></a-entity>
 
-    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="-10 0 -50"
               rotation="0 0 0"
               gltf-model="Jerry.gltf"
               animation-mixer="clip:jump"
     ></a-entity>
 
-    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="10 0 -50"
               rotation="0 0 0"
               gltf-model="Tom.gltf"
               animation-mixer="clip:TomJump"
     ></a-entity>
 
-    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="-5 0 -75"
               rotation="0 0 0"
               gltf-model="Jerry.gltf"
               animation-mixer="clip:jump"
     ></a-entity>
 
-    <a-entity ammo-body="type:kinematic;"  ammo-shape="type:box"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="5 0 -75"
               rotation="0 0 0"
               gltf-model="Tom.gltf"
@@ -129,27 +129,27 @@
     
     <!--wall-->
     <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
-              position="-3 0 -5"
+              position="-1 0 -5"
               rotation="0 90 0"
               gltf-model="rotationwall.gltf"
               animation-mixer="clip:rotation"
     ></a-entity>
 
     <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
-              position="11 0 -5"
-              rotation="0 0 0"
+              position="9 0 -5"
+              rotation="0 90 0"
               gltf-model="rotationwall.gltf"
               animation-mixer="clip:rotation"
     ></a-entity>
 
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="-8 0 -50"
               rotation="0 90 0"
               gltf-model="rotationwall.gltf"
               animation-mixer="clip:rotation"
     ></a-entity>
 
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="16 0 -50"
               rotation="0 0 0"
               gltf-model="rotationwall.gltf"
@@ -159,29 +159,29 @@
 
     <!--Tree-->
 
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
-              position="3 1 -17"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="3 1 -57"
               rotation="0 0 0"
               gltf-model="tree.gltf"
               animation-mixer="clip:Action"
     ></a-entity>
 
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
-              position="13 1 -17"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="13 1 -57"
               rotation="0 0 0"
               gltf-model="tree.gltf"
               animation-mixer="clip:Action"
     ></a-entity>
 
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
-              position="23 1 -17"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="23 1 -57"
               rotation="0 0 0"
               gltf-model="tree.gltf"
               animation-mixer="clip:Action"
     ></a-entity>
 
-    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
-              position="33 1 -17"
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="33 1 -57"
               rotation="0 0 0"
               gltf-model="tree.gltf"
               animation-mixer="clip:Action"
