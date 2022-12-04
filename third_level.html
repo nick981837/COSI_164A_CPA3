@@ -48,7 +48,7 @@
         ammo-body="type:static;" ammo-shape="type:box"
         width="200" height="200" depth="1"
         rotation="-90 0 0" position="0 -0.5 0" 
-        material="src:grass.jpeg; repeat:40 40"
+        material="src:snow.jpg; repeat:40 40"
     ></a-box>
     <!--Tom & Jerry-->
     <a-entity ammo-body="type:static;"  ammo-shape="type:box"
@@ -132,6 +132,41 @@
     ></a-entity>
 
 
+    <!--Tree-->
+
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="3 1 -17"
+              rotation="0 0 0"
+              gltf-model="tree.gltf"
+              animation-mixer="clip:Action"
+    ></a-entity>
+
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="13 1 -17"
+              rotation="0 0 0"
+              gltf-model="tree.gltf"
+              animation-mixer="clip:Action"
+    ></a-entity>
+
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="23 1 -17"
+              rotation="0 0 0"
+              gltf-model="tree.gltf"
+              animation-mixer="clip:Action"
+    ></a-entity>
+
+    <a-entity ammo-body="type:static;"  ammo-shape="type:box"
+              position="33 1 -17"
+              rotation="0 0 0"
+              gltf-model="tree.gltf"
+              animation-mixer="clip:Action"
+    ></a-entity>
+
+    
+
+
+
+
    
     <!-- walls are defined with mixins but ammo-body,ammo-shape
          can not be in the mixin ...
@@ -181,7 +216,7 @@
             ammo-body="type: dynamic;" ammo-shape="type: sphere"
             radius="0.5"
     ></a-sphere>
-    <a-sky material="src:background.jpeg"></a-sky>
+    <a-sky material="src:winter_mountains_scenery.jpg"></a-sky>
   
   </a-scene>
   </body>
