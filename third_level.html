@@ -6,6 +6,7 @@
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/aframe-template-component@^3.1.1/dist/aframe-template-component.min.js"></script> 
     <script src="follow.js"></script>
+    <script src="/link-controls.js"></script>
 
 
     <script id="boxTemplate" type="text/x-nunjucks-template">
@@ -50,6 +51,16 @@
         rotation="-90 0 0" position="0 -0.5 0" 
         material="src:snow.jpg; repeat:40 40"
     ></a-box>
+
+    <!--Dancing woman-->
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="0 0 -5"
+              rotation="25 0 0"
+              gltf-model="human.gltf"
+              animation-mixer="clip:dancing"
+    ></a-entity>
+
+
     <!--Tom & Jerry-->
     <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="-1 0 -10"
@@ -126,14 +137,15 @@
               
     ></a-entity>
 
+
     
     <!--wall-->
-    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+    <!-- <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="-1 0 -5"
               rotation="0 90 0"
               gltf-model="rotationwall.gltf"
               animation-mixer="clip:rotation"
-    ></a-entity>
+    ></a-entity> -->
 
     <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
               position="9 0 -5"
@@ -188,7 +200,12 @@
     ></a-entity>
 
     
-
+   <!-- Link
+   <a-link href="first_level.html"
+              link-controls
+              title="first_level" 
+              position="-50 0 80"
+              image="#nightsky"></a-link> -->
 
 
 
