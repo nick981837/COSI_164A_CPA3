@@ -38,6 +38,10 @@
       <a-asset-item id="golf_ball_m" src="10507_Golf Ball_v1_L3.mtl"></a-asset-item>
       <a-asset-item id="flag_o" src="21872_American_Flag_v1.obj"></a-asset-item>
       <a-asset-item id="flag_m" src="Blank.mtl"></a-asset-item>
+      <a-mixin id="wall"          
+      ammo-body="type:kinematic;" ammo-shape="type:box" geometry="width:190; height:20; depth:1" collideConnected="true"
+                    material="turquoise.png"       
+                    ></a-mixin>
     </a-assets>
     <a-entity template="src: #boxTemplate"></a-entity>
 
@@ -52,13 +56,20 @@
         material="src:snow.jpg; repeat:40 40"
     ></a-box>
 
-    <!--Dancing woman-->
+    <!--Dancing man-->
     <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
-              position="0 0 -5"
-              rotation="25 0 0"
-              gltf-model="human.gltf"
-              animation-mixer="clip:dancing"
+              position="0 10 -10"
+              rotation="0 -90 0"
+              gltf-model="xiaoren.gltf"
+              animation-mixer="clip:kick"
     ></a-entity>
+    <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
+              position="0 5 -15"
+              rotation="0 -90 0"
+              gltf-model="xiaoren.gltf"
+              animation-mixer="clip:kick"
+    ></a-entity>
+
 
 
     <!--Tom & Jerry-->
@@ -148,7 +159,7 @@
     ></a-entity> -->
 
     <a-entity ammo-body="type:dynamic;  emitCollisionEvents: true;" ammo-shape="type: sphere; fit: manual; sphereRadius:1"
-              position="9 0 -5"
+              position="12 0 -5"
               rotation="0 90 0"
               gltf-model="rotationwall.gltf"
               animation-mixer="clip:rotation"
